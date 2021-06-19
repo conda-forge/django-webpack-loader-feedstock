@@ -1,5 +1,5 @@
 {% set name = "django-webpack-loader" %}
-{% set version = "0.7.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7a3c88201aa54481f9399465615cbe7b9aece8081496a6d0287b7cb8e232f447
+  sha256: c7f89a272a177a17a045ceab26bbb7e35d28ca5597c384de96817784b610c977
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -32,7 +32,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "Transparently use webpack with django"
+  summary: Transparently use webpack with django
   dev_url: https://github.com/owais/django-webpack-loader
 
 extra:
