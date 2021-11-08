@@ -18,14 +18,14 @@ requirements:
   host:
     - pip
     - python >=3.5
+    - django >=2.0
   run:
     - python >=3.5
+    - django >=2.0
 
 test:
   imports:
     - webpack_loader
-    - webpack_loader.contrib
-    - django
   commands:
     - pip check
   requires:
