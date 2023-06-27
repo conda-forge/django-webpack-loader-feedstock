@@ -1,26 +1,25 @@
 {% set name = "django-webpack-loader" %}
-{% set version = "1.4.1" %}
+{% set version = "2.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7e34085b7fc4d352e482ff9cf7d09ae4524e730675e25432ab1d25a2dd94e583
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/django-webpack-loader-{{ version }}.tar.gz
+  sha256: 0e8dfb2fcdb39dbfd01be7603c060132a4664f483811ce3c75f2d3c0d39ab762
 
 build:
   noarch: python
-  number: 0
   script: {{ PYTHON }} -m pip install . -vv
+  number: 0
 
 requirements:
   host:
+    - python >=3.7
     - pip
-    - python >=3.5
-    - django >=2.0
   run:
-    - python >=3.5
+    - python >=3.7
     - django >=2.0
 
 test:
