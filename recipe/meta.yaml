@@ -1,5 +1,5 @@
 {% set name = "django-webpack-loader" %}
-{% set version = "3.2.0" %}
+{% set version = "3.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: af2b634ea11973d093ffb48a402b8838c6201d0e4e4ba9216f97b74e57791e76
+  sha256: d4bfaca9a640f087e7feeeb2ca6afd3d0a644bce3925b3d430448989c1673774
 
 build:
   noarch: python
